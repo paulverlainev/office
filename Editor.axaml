@@ -1,0 +1,55 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="office.Editor"
+        Title="Обновление данных">
+     <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Добавить сотрудника</TextBlock>
+         <StackPanel Orientation="Horizontal">
+             <TextBlock Margin = "0 25 0 0">Фамилия: </TextBlock>
+             <TextBox Name="id" x:CompileBindings="False" Text="{Binding id}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Фамилия сотрудника"></TextBox>
+         </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Фамилия: </TextBlock>
+                <TextBox Name="surname" x:CompileBindings="False" Text="{Binding surname}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Фамилия сотрудника"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Имя: </TextBlock>
+                <TextBox Name="firstname" x:CompileBindings="False" Text="{Binding firstname}" Width="200" Height="5" Margin = "90 0 0 0" Watermark="Имя сотрудника"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Отчество: </TextBlock>
+                <TextBox Name="lastname" x:CompileBindings="False" Text="{Binding lastname}" Width="200" Height="5" Margin = "75 0 0 0" Watermark="Отчество сотрудника"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Серия паспорта: </TextBlock>
+                <TextBox Name="series" x:CompileBindings="False" Text="{Binding series}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Серия паспорта"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Номер паспорта: </TextBlock>
+                <TextBox Name="number" x:CompileBindings="False" Text="{Binding number}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Номер паспорта"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Должность: </TextBlock>
+                <TextBox Name="post" x:CompileBindings="False" Text="{Binding post}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Должность"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Оклад: </TextBlock>
+                <TextBox Name="salary" x:CompileBindings="False" Text="{Binding salary}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Оклад сотрудника"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Номер договора: </TextBlock>
+                <TextBox Name="contract" x:CompileBindings="False" Text="{Binding contract}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Номер договора"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Номер карты: </TextBlock>
+                <TextBox Name="card" x:CompileBindings="False" Text="{Binding card}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Номер карты"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Edits" Content="Сохранить" Click="Edit"  Margin = "0 15 0 10"></Button>
+                <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "165 15 0 10"></Button>
+            </StackPanel>
+        </UniformGrid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="office.Adder"
+        Title="Добавление данных">
+     <UniformGrid Columns="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Margin = "90 10 0 0" FontSize = "20" FontWeight="Bold"> Добавить данные</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Серия паспорта: </TextBlock>
+                <TextBox Name="series" x:CompileBindings="False" Text="{Binding series}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Серия паспорта"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Номер паспорта: </TextBlock>
+                <TextBox Name="number" x:CompileBindings="False" Text="{Binding number}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Номер паспорта"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Номер договора: </TextBlock>
+                <TextBox Name="contract" x:CompileBindings="False" Text="{Binding contract}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Номер договора"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin = "0 25 0 0">Номер карты: </TextBlock>
+                <TextBox Name="card" x:CompileBindings="False" Text="{Binding card}" Width="200" Height="5" Margin = "55 0 0 0" Watermark="Номер карты"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="SavesSrs" Content="Сохранить" Click="SaveSrs"  Margin = "0 15 0 10"></Button>
+                <Button Name="Back" Content="Назад" Click="GoBack"  Margin = "50 15 0 10"></Button>
+                <Button Name="AddE" Content="Добавить" Click="Addss"  Margin = "50 15 0 10"></Button>
+            </StackPanel>
+        </UniformGrid>
+</Window>
